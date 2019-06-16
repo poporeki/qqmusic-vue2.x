@@ -1,6 +1,6 @@
 # qqmusic-vue2.x
 基于vue2.x  实现的一个音乐播放器，接口抓取自QQ音乐网页，安卓端
-在线地址： [music.yansk.cn](music.yansk.cn)
+在线地址： [music.yansk.cn](http://music.yansk.cn)
 使用Express做了转发接口
 
 前端主要使用了Vue Vue-Cli3 Vuex Axios  vue-awesome-swiper vue-lazyload
