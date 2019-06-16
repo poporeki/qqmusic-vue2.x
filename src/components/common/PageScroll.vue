@@ -56,7 +56,6 @@
 	import commonHeader from "@/components/common/HeaderItem";
 	import _debounce from "@/utils/_debounce";
 
-	import { styler, spring, listen, pointer, value, tween } from "popmotion";
 	export default {
 		components: { commonHeader, songListItem },
 		props: {
@@ -112,8 +111,6 @@
 				el_header: null,
 				el_songList: null,
 				el_cover: null,
-				coverStyler: null,
-				tabStyler: null,
 				setTransition: false,
 				eleAniArr: [],
 				eleAniObj: {}
@@ -315,8 +312,6 @@
 				let tab = this.$refs.tab;
 				this.initclientHeight = tab.clientHeight;
 				this.initTop = tab.offsetTop;
-				this.coverStyler = styler(this.$refs.bg_cover);
-				this.tabStyler = styler(tab);
 				let $header = this.$refs.common_header.$el;
 				this.val_headerHei = $header.clientHeight;
 				this.el_container = this.$refs.page_container;
