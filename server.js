@@ -6,7 +6,7 @@ const {
   historyApiFallback
 } = require('koa2-connect-history-api-fallback');
 
-const PORT = 3002;
+const PORT = 9003;
 
 app.use(historyApiFallback({
   history: './dist/index.html'
