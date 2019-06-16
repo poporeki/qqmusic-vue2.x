@@ -153,7 +153,6 @@ export default new Vuex.Store({
             return rand(s);
 
           }
-          console.log(songList.length + '::' + num);
           return num;
         }
         let num = rand(songIdx);

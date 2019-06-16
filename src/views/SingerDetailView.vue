@@ -283,7 +283,6 @@
 			/**获取滚动Y轴数值 */
 			getListScrollY(val) {
 				this.listScrollY = val;
-				console.log(this.listScrollY);
 			},
 			/**滚动途中 */
 			onScroll(pos) {

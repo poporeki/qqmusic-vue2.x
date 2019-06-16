@@ -41,7 +41,6 @@
 						if (data.code !== 0) return;
 						that.mvInfo = data.getMvUrl.data[that.vid];
 						that.formatUrl();
-						console.log(data);
 					});
 			},
 			loadedmetadata() {

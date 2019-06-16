@@ -15,7 +15,7 @@
 			@scroll="onScroll"
 			:data="songsList"
 		>
-			<div class="song-list-body-inner">
+			<div :class="{'song-list-body-inner':true,request:isRequest}">
 				<request-loading-item v-show="isRequest"></request-loading-item>
 				<!-- ###### TOP ###### -->
 				<div class="header">

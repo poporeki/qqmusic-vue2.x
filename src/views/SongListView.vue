@@ -16,8 +16,7 @@
 			@scroll="onScroll"
 			class="song-list-body"
 		>
-			<div class="song-list-body-inner">
-				<request-loading-item v-show="isRequest"></request-loading-item>
+			<div :class="{'song-list-body-inner':true, request:isRequest}">
 				<div class="header" v-show="!isRequest">
 					<div class="cover">
 						<div class="inner">
@@ -72,6 +71,7 @@
 						</transition-group>
 					</div>
 				</div>
+				<request-loading-item v-show="isRequest"></request-loading-item>
 			</div>
 		</better-scroll-item>
 	</div>
@@ -125,7 +125,6 @@
 					this.isRequest = false;
 					if (data.code !== 0 && data.subcode !== 0) return;
 					that.songsList = data.cdlist[0];
-					console.log(data);
 				});
 			},
 
@@ -182,6 +181,14 @@
 		}
 		.song-list-body-inner {
 			padding-bottom: 6rem;
+			&.request {
+				position: relative;
+				height: 100%;
+				width: 100%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
 		}
 		.header {
 			position: relative;

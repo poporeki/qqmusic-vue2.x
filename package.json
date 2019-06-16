@@ -15,7 +15,6 @@
     "koa-static": "^5.0.0",
     "koa2-connect-history-api-fallback": "^0.1.2",
     "lyric-parser": "^1.0.1",
-    "popmotion": "^8.6.10",
     "sass-resources-loader": "^2.0.0",
     "vue": "^2.6.10",
     "vue-awesome-swiper": "^3.1.3",

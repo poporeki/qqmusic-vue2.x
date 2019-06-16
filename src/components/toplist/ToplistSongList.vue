@@ -69,16 +69,11 @@
 				let sHei = target.scrollHeight;
 				let clientHeight = target.clientHeight;
 				let scrollTop = target.scrollTop;
-				console.log("scrollHeight:" + sHei);
-				console.log("clientHeight:" + clientHeight);
-				console.log("scrollTop:" + scrollTop);
-				console.log(sHei - clientHeight);
 				if (sHei - clientHeight - scrollTop < 50) {
 					if (!this.isRequest) {
 						this.$emit("getMoreSongData");
 					}
 				}
-				console.log(e);
 			},
 			/**跳转MV界面 */
 			updateMVInfo(mvobj) {

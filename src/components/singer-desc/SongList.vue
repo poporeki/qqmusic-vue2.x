@@ -72,9 +72,7 @@
 		},
 		methods: {
 			onScroll(pos) {
-				console.log(pos);
 				this.$emit("scrollY", pos.y);
-				console.log(this.$refs.song_list.y);
 			},
 			/**跳转MV界面 */
 			updateMVInfo(mvobj) {

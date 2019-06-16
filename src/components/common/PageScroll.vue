@@ -214,8 +214,6 @@
 			},
 			getMoreListData() {},
 			onTouchMoveUp() {
-				console.log("up");
-
 				let _hHei = this.val_headerHei;
 				let tab_hei = this.val_tabHeight;
 
@@ -311,12 +309,6 @@
 					0 + Math.abs(this.val_tabTop - this.initTop) / 10
 				);
 			}
-		},
-		mounted() {
-			// this.$nextTick(function() {
-			// 	this.initclientHeight = this.$refs.tab.clientHeight;
-			// 	this.initTop = this.$refs.tab.offsetTop;
-			// });
 		},
 		created() {
 			this.$nextTick(function() {

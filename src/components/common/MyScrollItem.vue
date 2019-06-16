@@ -36,7 +36,6 @@
 						var _point = ev.touches[0],
 							_top = elem.scrollTop;
 						var _bottomFaVal = elem.scrollHeight - elem.offsetHeight;
-						//console.log(_top + ":" + _bottomFaVal + ":" + elem.offsetHeight + ":" + elem.scrollHeight);
 						if (_top === 0) {
 							if (_point.clientY > startY) {
 								ev.preventDefault();

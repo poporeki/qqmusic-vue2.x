@@ -223,19 +223,13 @@
 			},
 			/**监听列表滚动 */
 			listenerListScroll(e) {
-				console.log(e);
 				let target = e.target;
 				let sHei = target.scrollHeight;
 				let clientHeight = target.clientHeight;
 				let scrollTop = target.scrollTop;
-				console.log("scrollHeight:" + sHei);
-				console.log("clientHeight:" + clientHeight);
-				console.log("scrollTop:" + scrollTop);
-				console.log(sHei - clientHeight);
 				if (sHei - clientHeight - scrollTop < 50) {
 					this.getMoreSongListData();
 				}
-				console.log(e);
 			},
 			getMoreSongListData() {
 				return new Promise((resolve, reject) => {
@@ -254,7 +248,6 @@
 						.get(url, { params })
 						.then(({ data }) => {
 							this.isRequest = false;
-							console.log(data);
 							if (data.code !== 0 || !data.data.song) reject(0);
 							resolve(data.data.song);
 						})

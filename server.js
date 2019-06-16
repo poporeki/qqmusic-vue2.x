@@ -6,6 +6,8 @@ const {
   historyApiFallback
 } = require('koa2-connect-history-api-fallback');
 
+const PORT = 3002;
+
 app.use(historyApiFallback({
   history: './dist/index.html'
 }));
@@ -13,4 +15,4 @@ app.use(static(
   path.join(__dirname, "./dist")
 ))
 
-app.listen(3002, () => console.log('blog\'s backstage is running'));
+app.listen(PORT, () => console.log(`QQMUSIC-VUE2.X SERVER'S RUNNING.  PORT:${PORT}`));

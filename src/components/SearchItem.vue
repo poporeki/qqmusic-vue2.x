@@ -75,7 +75,6 @@
 				};
 				this.$store.dispatch("pushSearchHistory", kws);
 				this.$axios.get(this.searchUrl, { params }).then(({ data }) => {
-					console.log(data);
 					if (data.subcode === 10003) {
 						that.noResult = true;
 						return;

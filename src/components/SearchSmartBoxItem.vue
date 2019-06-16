@@ -91,7 +91,6 @@
 						}
 					})
 					.then(({ data }) => {
-						console.log(data);
 						if (data.code !== 0) {
 							return;
 						}
@@ -142,6 +141,9 @@
 		},
 		watch: {
 			keywords(val) {
+				if (!val) {
+					this.isShowSmartBox = false;
+				}
 				this.getSmartBoxData(val);
 			},
 			isShowSearchResultBox(val) {
