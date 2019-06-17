@@ -104,7 +104,10 @@
 			}
 		},
 		watch: {
-			keywords(val) {
+			keywords(val, oldVal) {
+				if (this.isShowSearchResult && val !== oldVal) {
+					this.isShowSearchResult = false;
+				}
 				if (!val || val === "" || val === null) {
 					this.noResult = false;
 					this.isShowSearchResult = false;

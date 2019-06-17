@@ -49,7 +49,7 @@
 					// some swiper options/callbacks
 					// 所有的参数同 swiper 官方 api 参数
 					// ...
-					slidesPerView: 3,
+					slidesPerView: 3.25,
 					spaceBetween: 5,
 					watchSlidesProgress: true,
 					initialSlide: 0,

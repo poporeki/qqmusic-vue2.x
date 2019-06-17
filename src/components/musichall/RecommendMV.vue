@@ -40,7 +40,7 @@
 					// some swiper options/callbacks
 					// 所有的参数同 swiper 官方 api 参数
 					// ...
-					slidesPerView: 2,
+					slidesPerView: 2.15,
 					slidesPerColumn: 3,
 					slidesPerColumnFill: "row",
 					watchSlidesProgress: true,

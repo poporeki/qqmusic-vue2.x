@@ -12,6 +12,7 @@
 					<img :src="item.pic_info.url" alt>
 				</div>
 			</swiper-slide>
+			<div class="swiper-pagination" slot="pagination"></div>
 		</swiper>
 	</transition>
 </template>
@@ -33,6 +34,9 @@
 					// some swiper options/callbacks
 					// 所有的参数同 swiper 官方 api 参数
 					// ...
+					pagination: {
+						el: ".swiper-pagination"
+					},
 					spaceBetween: 15,
 					watchSlidesProgress: true,
 					initialSlide: 0,
@@ -69,6 +73,18 @@
 <style lang="scss">
 	.swiper-container {
 		position: relative;
+		.swiper-pagination {
+			bottom: 0;
+			text-align: center;
+			left: 50%;
+			transform: translateX(-50%);
+			.swiper-pagination-bullet {
+				margin: 0 0.2rem;
+			}
+			.swiper-pagination-bullet-active {
+				background-color: #fff;
+			}
+		}
 		.swiper-slide {
 			padding: 0 15px;
 			box-sizing: border-box;
