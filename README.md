@@ -39,13 +39,11 @@ QQ音乐的API可能会有变动，可能会出现无法正常使用的情况
 git clone https://github.com/poporeki/qqmusic-vue2.x.git
 cd qqmusic-vue2.x
 npm install
-npm run build
-```
-
-启动Koa服务
-```javascript
+npm run serve 
+//或
+npm run build 
+//启动Koa服务
 node server.js
-
 ```
 
 
