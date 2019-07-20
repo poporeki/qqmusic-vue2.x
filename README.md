@@ -52,7 +52,7 @@ node server.js
 # 部分演示
 
 首页
-![image](http://image.yansk.cn/home.gif)
+![image](http://image.yansk.cn/tegVGBW8yb.gif)
 
 搜索页
 ![image](http://image.yansk.cn/search.gif)
@@ -64,6 +64,6 @@ node server.js
 ![image](http://image.yansk.cn/singer_detail.gif)
 
 播放器
-![image](http://image.yansk.cn/player.gif)
+![image](http://image.yansk.cn/f1NwqZlP5V.gif)
 
 ![image](http://image.yansk.cn/mv.gif)
